@@ -3,7 +3,7 @@
 class PostsController < ApplicationController
 
   before_action :find_post , only: [:show , :edit , :update , :destroy, :upvote , :downvote]
-  before_action :authenticate_user! , only: [:edit , :create , :update, :destroy]
+  before_action :authenticate_user! , only: [:edit , :create , :update, :destroy, :new]
 
 
   def index
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 
   end
 
-  def create
+  def create33
 
     @post = current_user.posts.build(post_params)
 
