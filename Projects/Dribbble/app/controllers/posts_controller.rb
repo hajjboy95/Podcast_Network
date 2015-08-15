@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 
   end
 
-  def create33
+  def create
 
     @post = current_user.posts.build(post_params)
 
