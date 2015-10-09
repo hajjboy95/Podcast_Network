@@ -1,0 +1,58 @@
+//body {
+//  background: #ffc733;
+//}
+
+
+#background {
+  background-image: url(homepage_background.jpg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  text-align: center;
+
+  header {
+
+    #logo {
+      float: left;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $white;
+      text-decoration: none;
+      margin: 0;
+      padding: 3rem 0;
+    }
+    nav {
+
+      float: right;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 3rem;
+        li{
+          display: inline;
+          margin-left: 2.5rem;
+
+          a{
+            color: $white;
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: $white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 7rem auto 3rem auto;
+
+  }
+}
+
+
+@import 'podcasts';
